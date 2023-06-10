@@ -1,5 +1,4 @@
 let express = require('express');
-const { messages } = require('../data/users');
 let router = express.Router();
 let { v4: uuidv4 } = require('uuid');
 

@@ -6,12 +6,11 @@ let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 let bodyParser = require('body-parser');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var messagesRouter = require('./routes/messages');
-var cubiesRouter = require('./routes/cubies')
+const indexRouter = require('./routes/index');
+const messagesRouter = require('./routes/messages');
+const cubiesRouter = require('./routes/cubies')
 
-var app = express();
+const app = express();
 
 app.use(cors());
 
