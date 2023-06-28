@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
 })
 
 router.get('/:cubieId', (req, res) => {
-    return res.send(cubies['records'].filter(cubie => cubie.ID === Number(req.params.cubieId)));
+    return res.send(cubies['records'].find(cubie => cubie.ID === Number(req.params.cubieId)));
 })
 
 module.exports = router;
